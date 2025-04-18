@@ -3,11 +3,12 @@
 A Java application demonstrating GigaChat AI integration with custom tools for calculations, time retrieval, and risk data management.
 
 ## 📌 Features
-
-- 🧮 **Mathematical Operations** (addition, subtraction, multiplication)
-- ⏰ **Current Time Retrieval**
-- 📉 **Risk Incident Data Access**
-- 💬 **Interactive Chat Interface**
+- Integration with GigaChat API via `langchain4j-gigachat`
+- Three custom tools:
+  - `CalcTool`: Basic arithmetic operations (addition, subtraction, multiplication)
+  - `TimeTool`: Current time retrieval
+  - `RiskTool`: Sample risk incident data
+- Interactive console interface
 
 ## 🚀 Quick Start
 
