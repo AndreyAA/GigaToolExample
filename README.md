@@ -18,8 +18,8 @@ A Java application demonstrating GigaChat AI integration with custom tools for c
 ### Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/AndreyAA/gigachat-tools.git
-cd gigachat-tools
+git clone https://github.com/AndreyAA/GigaToolExample.git
+cd GigaToolExample
 ```
 
 2. Build with Maven:
@@ -29,7 +29,7 @@ mvn clean package
 
 3. Run the application:
 ```bash
-java -jar target/gigachat-tools.jar YOUR_API_KEY
+java -jar target/GigaToolExample.jar YOUR_API_KEY
 ```
 
 ## 🛠️ Usage Examples
