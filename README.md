@@ -2,6 +2,8 @@
 
 A Java application demonstrating GigaChat AI integration with custom tools for calculations, time retrieval, and risk data management.
 
+Based on https://github.com/ai-forever/langchain4j-gigachat
+
 ## 📌 Features
 - Integration with GigaChat API via `langchain4j-gigachat`
 - Three custom tools:
