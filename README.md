@@ -93,5 +93,3 @@ Pull requests are welcome! For major changes, please open an issue first.
 
 ---
 
-> **Note**: Remember to keep your API key secure and never commit it to version control!
-```
