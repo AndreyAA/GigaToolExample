@@ -4,7 +4,7 @@
 
   <groupId>com.ali.dev.ai.tool</groupId>
   <artifactId>GigaToolExample</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>jar</packaging>
 
   <name>GigaToolExample</name>
@@ -60,6 +60,48 @@
           <source>${java.version}</source>
           <target>${java.version}</target>
         </configuration>
+      </plugin>
+
+      <!-- Добавьте этот плагин для создания исполняемого JAR -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.3.0</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <mainClass>com.ali.dev.ai.tool.GigaToolsExample</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>3.6.0</version>
+        <configuration>
+          <appendAssemblyId>false</appendAssemblyId>
+          <finalName>giga-tool</finalName>
+          <archive>
+            <manifest>
+              <mainClass>com.ali.dev.ai.tool.GigaToolsExample</mainClass>
+            </manifest>
+          </archive>
+
+          <descriptorRefs>
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+          </descriptorRefs>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>
