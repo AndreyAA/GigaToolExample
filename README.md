@@ -44,6 +44,7 @@ what time is it now
 show me recent risks
 calculate 45 minus 12
 how many days until new year
+A guy had  50$. he has spent $15 on a burger and $10 on coffee. Later, his friend gave him double the amount he had left. How much money does he have now?
 ```
 
 ## 🔧 Custom Tools
